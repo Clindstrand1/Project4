@@ -1,0 +1,114 @@
+.twitterfeed{
+    border-bottom: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+.tweetedtext{
+    margin-top: -10px;
+}
+
+.time{
+    font-size: 12px;
+    font-family: Open Sans Bold;
+    margin-top: -10px;
+    padding-left: 60px;
+}
+
+.username{
+    font-family: Open Sans Bold;
+    margin-top: -15px;
+}
+
+
+@font-face {
+    font-family: Open Sans;
+    src: url(../css/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Open Sans Bold;
+    src: url(../css/fonts/OpenSans-Bold.ttf);
+}
+
+.avatar{
+    border-radius: 8px;
+    float: left;
+    padding: 5px;
+    clear: both;
+}
+
+.twittersection{
+    width: 100%;
+    border-radius: 5px;
+}
+
+a{
+    color: #B40404;
+}
+
+.navbar-brand{
+     font-family: 'Lily Script One', cursive;
+    font-size: 45pt;
+    line-height: 1em;
+    color: #191970;
+}
+
+.container{
+    height: 100px;
+}
+
+body{
+
+}
+
+.header{
+    height: 20%;
+}
+
+a:hover .here{
+    color: white;
+    font-size: 20px;
+    text-decoration:none;
+}
+
+.toppart{
+    margin-top:10px;
+}
+
+
+.introtext{
+    line-height: 2em;
+    margin-top:20px;
+}
+.pagetitle{
+    font-family: 'Lily Script One', cursive;
+    font-size: 45pt;
+    line-height: 1em;
+    color: #191970;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tweet{
+    padding: 0px;
+    margin-top: -1px;
+    margin-left: 60px;
+}
+
+
+
+h3 {
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}

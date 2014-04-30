@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>#NYFW2014</title>
+ 
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+<link rel="stylesheet" href="css/youtube-video-gallery.css" type="text/css"/>
+<link rel="stylesheet" href="css/test.css" type="text/css"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://codeorigin.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/jquery.youtubevideogallery.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtzRuvyRkVnyYcFandf38JxZs1EzphnhU&sensor=false"></script>
+<script src="js/instagram.js" type="text/javascript"></script>
+
+
+<!-- maps -->
+
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript">
+    var map,map2;
+      function initialize() {
+        console.log('initialize');
+        var mapOptions = {
+            center: new google.maps.LatLng(40.772953, -73.983267),
+            zoom: 12,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">Lincoln Center</h3>'+
+      '<div id="bodyContent">'+
+      '<p><b>Notable shows:</b> ' +
+      'Carolina Herrera, Monique Lhuillier, Nicole Miller, Naeem Kahn</p>'+
+      '<p><b>Address:</b> '+
+      '10 Lincoln Center Plaza, New York, NY 10023</p>'+
+      '<p><b>Website:</b> '+
+      '<a href="http://lc.lincolncenter.org" target="blank">http://lc.lincolncenter.org</a></p>'+
+      '</div>'+
+      '</div>';
+      
+      var contentString2 = '<div id="content">'+
+     '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">Milk Studios</h3>'+
+      '<div id="bodyContent">'+
+      '<p><b>Notable shows:</b> ' +
+      'Peter Som, Jonathan Simkhai, Cushnie et Ochs, Jeremy Scott</p>'+
+      '<p><b>Address:</b> '+
+      '450 W 15th St, New York, NY 10011</p>'+
+      '<p><b>Website:</b> '+
+      '<a href="http://www.milkstudios.com" target="blank">http://www.milkstudios.com</a></p>'+
+      '</div>'+
+      '</div>';
+      
+      var contentString3 = '<div id="content">'+
+       '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">Pier 59 Studios</h3>'+
+      '<div id="bodyContent">'+
+      '<p><b>Notable shows:</b> ' +
+      'Tocca, Tibi, Giulietta, Karen Walker</p>'+
+      '<p><b>Address:</b> '+
+      '59 Chelsea Piers #2, New York, NY 10011</p>'+
+      '<p><b>Website:</b> '+
+      '<a href="http://pier59studios.com/" target="blank">http://pier59studios.com/</a></p>'+
+      '</div>'+
+      '</div>';
+      
+      var contentString4 = '<div id="content">'+
+       '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">Spring Studios</h3>'+
+      '<div id="bodyContent">'+
+      '<p><b>Notable shows:</b> ' +
+      'Altuzarra, Diane von Furstenberg, Theory, Michael Kors</p>'+
+      '<p><b>Address:</b> '+
+      '50 Varick St, New York, NY 10013</p>'+
+      '<p><b>Website:</b> '+
+      '<a href="http://www.springstudios.com" target="blank">http://www.springstudios.com</a></p>'+
+      '</div>'+
+      '</div>';
+      
+      var contentString5 = '<div id="content">'+
+       '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">Duggal Greenhouse</h3>'+
+      '<div id="bodyContent">'+
+      '<p><b>Notable shows:</b> ' +
+      'Alexander Wang</p>'+
+      '<p><b>Address:</b> '+
+      '63 Flushing Ave, Brooklyn, NY 11205</p>'+
+      '<p><b>Website:</b> '+
+      '<a href="http://duggalevents.com/greenhouse.html" target="blank">http://duggalevents.com</a></p>'+
+      '</div>'+
+      '</div>';
+      
+      var contentString6 = '<div id="content">'+
+       '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">Center 548</h3>'+
+      '<div id="bodyContent">'+
+      '<p><b>Notable shows:</b> ' +
+      'Kate Spade New York, Suno, Rebecca Taylor, Tracy Reese</p>'+
+      '<p><b>Address:</b> '+
+      '548 W 22nd St, New York, NY 10011</p>'+
+      '<p><b>Website:</b> '+
+      '<a href="http://www.center548.com" target="blank">http://www.center548.com</a></p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+  
+   var infowindow2 = new google.maps.InfoWindow({
+      content: contentString2
+  });
+   
+   var infowindow3 = new google.maps.InfoWindow({
+      content: contentString3
+  });
+   
+   var infowindow4 = new google.maps.InfoWindow({
+      content: contentString4
+  });
+  
+   var infowindow5 = new google.maps.InfoWindow({
+      content: contentString5
+  });
+   
+    var infowindow6 = new google.maps.InfoWindow({
+      content: contentString6
+  });
+   
+        var lincoln = new google.maps.LatLng(40.772953, -73.983267);
+        var milk = new google.maps.LatLng(40.742664, -74.007116);
+        var pier59 = new google.maps.LatLng(40.745818, -74.008317);
+        var spring = new google.maps.LatLng(40.725665, -74.005478);
+        var navy = new google.maps.LatLng(40.703741, -73.97757);
+        var center548 = new google.maps.LatLng(40.748395, -74.007064);
+
+        var marker1 = new google.maps.Marker({
+            position: lincoln,
+            map: map,
+            title: "Lincoln Center"
+        });
+        
+        var marker2 = new google.maps.Marker({
+    position: milk,
+    map: map,
+    title:"Milk Studios"
+});
+        
+         var marker3 = new google.maps.Marker({
+    position: pier59,
+    map: map,
+    title:"Pier 59"
+});
+         var marker4 = new google.maps.Marker({
+    position: spring,
+    map: map,
+    title:"Spring Studios"
+});
+         var marker5 = new google.maps.Marker({
+    position: navy,
+    map: map,
+    title:"Duggal Greenhouse, Navy Yard"
+});
+         var marker6 = new google.maps.Marker({
+    position: center548,
+    map: map,
+    title:"Center 548"
+});
+        
+        google.maps.event.addListener(marker1, 'click', function() {
+    infowindow.open(map,marker1);
+    infowindow2.close();
+    infowindow3.close();
+    infowindow4.close();
+    infowindow5.close();
+    infowindow6.close();
+  });
+        
+        google.maps.event.addListener(marker2, 'click', function() {
+    infowindow2.open(map,marker2);
+    infowindow.close();
+    infowindow3.close();
+    infowindow4.close();
+    infowindow5.close();
+    infowindow6.close();
+  });
+    
+    google.maps.event.addListener(marker3, 'click', function() {
+    infowindow3.open(map,marker3);
+    infowindow2.close();
+    infowindow.close();
+    infowindow4.close();
+    infowindow5.close();
+    infowindow6.close();
+  });
+    
+    google.maps.event.addListener(marker4, 'click', function() {
+    infowindow4.open(map,marker4);
+    infowindow2.close();
+    infowindow3.close();
+    infowindow.close();
+    infowindow5.close();
+    infowindow6.close();
+  });
+    
+    google.maps.event.addListener(marker5, 'click', function() {
+    infowindow5.open(map,marker5);
+    infowindow2.close();
+    infowindow3.close();
+    infowindow4.close();
+    infowindow.close();
+    infowindow6.close();
+  });
+    
+    google.maps.event.addListener(marker6, 'click', function() {
+    infowindow6.open(map,marker6);
+    infowindow2.close();
+    infowindow3.close();
+    infowindow4.close();
+    infowindow5.close();
+    infowindow.close();
+  });
+
+
+    }
+      
+      
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</head>
+
+<body>
+
+    
+    <div class="container">
+        
+<div class="row toppart">
+        <div class="col-md-8 col-md-offset-2"><p class="pagetitle"><img class="headerimage" src="images/headerimage.jpg"></div></div>
+<div class="row">
+        <div class="col-md-8 col-md-offset-2">
+        <a data-scroll data-options="easing: linear" href="#youtube"><img class="youtubenav" src="images/youtubenav.jpg"></a>
+        <a data-scroll data-options="easing: linear" href="#twitter"><img class="twitternav" src="images/twitternav.jpg"></a>
+        <a data-scroll data-options="easing: linear" href="#instagram"><img class="instagramnav" src="images/instagramnav.jpg"></a>
+        <a data-scroll data-options="easing: linear" href="#maps"><img class="mapsnav" src="images/mapsnav.jpg"></a></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="introtext">New York Fashion Week is held twice a year, every year. This year, the Fall 2014 shows were
+            presented February 6 through February 13, 2014. New York Fashion Week is sponsored each year by Mercedes Benz. Hundreds of designers
+            participate and show at various locations throughout the city, which you can see on our maps app above.
+            Check out the social conversation
+            on twitter, instagram and youtube with the links above! Use the hashtag #NYFW to join in and share your
+            opinions on your favorite designers and shows and what you're most excited to wear this fall.</div>
+            
+        </div></div>
+        <div class="row">
+<div class="col-md-8 col-md-offset-2 youtube">
+    <div class="titlecont"><p id="youtube">#NYFW on YouTube</p></div>
+    <script>
+        $(document).ready(function(){
+            $("ul.youtube-video-gallery").youtubeVideoGallery(  );
+            console.log('youtubestuff');
+        });
+        
+    </script>
+    <div class="videogallery">
+    <div id="youtubegallery"><ul class="youtube-video-gallery">
+        <li><a href="http://www.youtube.com/watch?v=mnS1trPgMts&list=PLj57uJBedZRkiDH97PFXtl0MIZSvwy5km">#MBFW</a></li>
+        <li><a href="http://www.youtube.com/watch?v=mUmvonfKnxE&index=7&list=PLj57uJBedZRmq4kwSaWauABIhJJd6UEsq">Runway Recap Day 1</a></li>
+        <li><a href="http://www.youtube.com/watch?v=yJUKXiwtRrM&list=PLj57uJBedZRmq4kwSaWauABIhJJd6UEsq">Runway Recap Day 2</a></li>
+        <li><a href="http://www.youtube.com/watch?v=IFhLHjZf9Hc&list=PLj57uJBedZRmq4kwSaWauABIhJJd6UEsq">Runway Recap Day 3</a></li>
+        <li><a href="http://www.youtube.com/watch?v=zyCKHMEboOk&list=PLj57uJBedZRmq4kwSaWauABIhJJd6UEsq">Runway Recap Day 4</a></li>
+        <li><a href="http://www.youtube.com/watch?v=kejmA2b1GwI&list=PLj57uJBedZRmq4kwSaWauABIhJJd6UEsq">Runway Recap Day 5</a></li>
+        <li><a href="http://www.youtube.com/watch?v=i3TZhcXeYp0&list=PLj57uJBedZRmq4kwSaWauABIhJJd6UEsq">Runway Recap Day 6</a></li>
+        <li><a href="http://www.youtube.com/watch?v=hcGw5wPxJOY&list=PLj57uJBedZRktXmiVrekUOxWcT2p43Jot&index=10">Michael Kors Fall 2014</a></li>
+    </ul>
+
+    </p>
+    </div>
+    </div>
+    
+      </div></div>
+<div class="row">
+<div class="col-md-8 col-md-offset-2 twitter">
+    <div class="titlecont"><p id="twitter">#NYFW on Twitter</p></div>
+    <iframe class="twitterframe" src="http://courtneylindstrand.com/twitter/"></iframe>
+    
+      </div></div>
+<div class="row">
+<div class="col-md-8 col-md-offset-2 instagram">
+    <div class="titlecont"><p id="instagram">#NYFW on Instagram</p></div>
+    <p><div id="results"></div></p>
+    
+      </div></div>
+<div class="row">
+<div class="col-md-8 col-md-offset-2 maps">
+    <div class="titlecont"><p id="maps">#NYFW on Location</p></div>
+    <div id="map-canvas"></div>
+    
+      </div></div>
+<script>
+    smoothScroll.init();
+</script>
+
+</body>
+</html>

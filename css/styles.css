@@ -1,0 +1,224 @@
+.youtubenav:hover{
+    -webkit-filter: grayscale(100%);
+}
+
+.instagramnav:hover{
+    -webkit-filter: grayscale(100%);
+}
+
+.twitternav:hover{
+    -webkit-filter: grayscale(100%);
+}
+
+.mapsnav:hover{
+    -webkit-filter: grayscale(100%);
+}
+
+.twitternav{
+    width: 24%;
+
+}
+
+.instagramnav{
+    width: 24%;
+ 
+}
+
+p{
+    margin: 0px;
+}
+
+
+
+.introtext{
+    border: double black 3pt;
+    border-left: none;
+    border-right: none;
+    font-family:otama;
+    font-size: 16px;
+    padding: 20px;
+    margin-top: 10px;
+    color: black;
+}
+
+.titlecont{
+    background: black;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+a{
+    color: #B40404;
+}
+
+ul{
+    margin-left: -40px;
+}
+
+.youtubenav{
+    width: 24%;
+    padding-left: 10px;
+
+}
+
+.mapsnav{
+    width: 24%;
+
+}
+
+
+@font-face {
+    font-family: otama;
+    src: url(../css/fonts/Otama-ep.otf);
+}
+
+
+#map-canvas{
+    height: 600px
+}
+
+.twitterframe{
+    width: 100%;
+    border: none;
+    height: 300px;
+}
+
+#twitter{
+    font-family: otama;
+    font-size: 45pt;
+    margin-top: 10px;
+
+}
+
+#instagram{
+    font-family: otama;
+    font-size: 45pt;
+    margin-top: 10px;
+
+}
+
+.videogallery{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#maps{
+    font-family: otama;
+    font-size: 45pt;
+    margin-top: 10px;
+}
+
+#youtubegallery{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#youtube{
+    font-family: otama;
+    font-size: 45pt;
+    margin-top: 10px;
+}
+
+
+.maps{
+    padding-bottom: 30px;
+}
+
+.headerimage{
+    width: 100%;
+}
+
+.navbar-brand{
+     font-family: 'otama', sans-serif;
+    font-size: 45pt;
+    line-height: 1em;
+    color: black;
+}
+
+
+.container{
+    height: 100px;
+}
+
+.instaimages{
+    width: 25%;
+    padding: 5px;
+    border: .5px solid black;
+}
+
+.header{
+    height: 20%;
+}
+
+a:hover .here{
+    color: white;
+    font-size: 20px;
+    text-decoration:none;
+}
+
+.toppart{
+    margin-top:10px;
+}
+
+b{
+    font-family: Open Sans Bold;
+}
+
+.pagetitle{
+    font-family: 'otama', sans-serif;
+    font-size: 72pt;
+    line-height: 1em;
+}
+
+@font-face {
+    font-family: Open Sans Bold;
+    src: url(../css/fonts/OpenSans-Bold.ttf);
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+    font-family: 'otama', sans-serif;
+}
+
+h4{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1.title{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h2{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+
+
+.content{
+    position: absolute;
+    z-index: 5;
+}
+
+h3 {
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+
+
